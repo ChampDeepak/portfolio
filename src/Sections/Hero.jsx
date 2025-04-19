@@ -1,5 +1,6 @@
 import React from 'react'
 import { words } from '../Constants'
+import Button from '../Components/Button'
 
 export const Hero = () => {
   return (
@@ -18,7 +19,7 @@ export const Hero = () => {
                                 <span className='wrapper'>
                                   {words.map((word)=>{
                                     return(
-                                        <span key={word.text} className='flex items-center' md:gap-3 gap-1 pb-2>
+                                        <span key={word.text} className='flex items-center md:gap-3 gap-1 pb-2'>
                                             <img 
                                                 src={word.imgPath}
                                                 alt={word.text}
@@ -30,11 +31,14 @@ export const Hero = () => {
                                 </span>
                             </span>
                         </h1>
-                        <h1>into real projects</h1>
-                        <h1>that deliver real projects</h1>
+                        <h1>into Real Projects</h1>
+                        <h1>that Deliver Results</h1>
                     </div>
                     <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-                    Hi, I'm Deepak, a Software Engineer based in Bangluru with a passion for problem solving.</p>
+                    Hi, I'm Deepak, a Software Engineer based in Bangluru with a passion for Engineering.</p>
+                    <Button className="md:w-80 md:h-16 w-60 h-12"
+                            id="button" 
+                            text="See My Work"/>
                 </div>
             </header>
             {/* Right Side -> 3D Model */}
